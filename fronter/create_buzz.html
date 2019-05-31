@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<title>Fronter</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<script>
+
+		$( function() {
+    var friendlist = [
+      "Matilde Henriksen",
+      "Tom Hugs",
+      "Craig Hutchins",
+      "Susan Dae",
+      "John Johnson",
+      
+    ];
+    $( "#search_friends" ).autocomplete({
+      source: friendlist
+    });
+  } );
+		
+  </script>
+</head>
+
+<body id="buzz_bgr">
+
+	<div id="line" class="grid"></div>
+
+	<ul>
+		<li><a href="menu.html">
+				<img class="icons" src="images/burger_icon.png" alt="Burger icon"></a>
+		</li>
+
+		<li><a href="login.html"><img class="icons" src="images/kea_logo_dark.png" alt="Kea logo"></a></li>
+
+
+		<li><a href="mail.html"><img class="icons" src="images/mail_icon.png" alt="Mail icon"></a></li>
+
+		<li><a href="settings.html"><img class="icons" src="images/settings_icon.png" alt="Settings icon"></a></li>
+
+		<li><a href="search.html"><img class="icons" src="images/search_icon.png" alt="Search icon"></a></li>
+
+
+		<li><a href="english.html"><img class="icons" id="en_icon" src="images/en_icon.png" alt="Search icon"></a></li>
+	</ul>
+
+	<div id=buzz_buzz_page>
+		<img class="buzz" src="images/logo_buzz.png" alt="Buzz logo">
+	</div>
+
+
+	<form action="create_buzz.html" method="get">
+
+		<!--INPUTS-->
+
+		<div>
+			<textarea class="large_inputs" name="topic_name" placeholder="Topic name"></textarea>
+
+		</div>
+
+		<div>
+			<textarea class="large_inputs" name="Keywords" placeholder="Keywords"></textarea>
+		</div>
+
+		<div>
+			<textarea class="large_inputs" name="Description" placeholder="Description"></textarea>
+
+		</div>
+
+		<div>
+			<textarea class="large_inputs" name="Start_it_up" placeholder="Start it up"></textarea>
+
+		</div>
+		<div class="slider slider_closed" id="friends_holder">
+
+
+			<div>
+				<input id="search_friends" type="search" name="search..." placeholder="Search..."><br>
+			</div>
+
+
+
+			<!--FRIENDS NAMES-->
+			<article>
+				<div class="friends" onclick="this.classList.toggle('selected');">
+					<div class="pic">
+						<img src="images/1.jpg" alt="Topic image" class="circle_image_friends"></div>
+					<div class="name">
+						<h2>John Johnson</h2>
+					</div>
+				</div>
+			</article>
+
+			<article>
+				<div class="friends" onclick="this.classList.toggle('selected');">
+					<div class="pic">
+						<img src="images/2.jpg" alt="Topic image" class="circle_image_friends"></div>
+					<div class="name">
+						<h2>Susan Dae</h2>
+					</div>
+				</div>
+			</article>
+
+			<article>
+				<div class="friends" onclick="this.classList.toggle('selected');">
+					<div class="pic">
+						<img src="images/3.jpg" alt="Topic image" class="circle_image_friends"></div>
+					<div class="name">
+						<h2>Craig Hutchins</h2>
+					</div>
+				</div>
+			</article>
+
+			<article>
+				<div class="friends" onclick="this.classList.toggle('selected');">
+					<div class="pic">
+						<img src="images/4.jpg" alt="Topic image" class="circle_image_friends"></div>
+					<div class="name">
+						<h2>Tom Hugs</h2>
+					</div>
+				</div>
+			</article>
+
+			<article>
+				<div class="friends" onclick="this.classList.toggle('selected');">
+					<div class="pic">
+						<img src="images/5.jpg" alt="Topic image" class="circle_image_friends"></div>
+					<div class="name">
+						<h2>Matilde Henriksen</h2>
+					</div>
+				</div>
+			</article>
+		</div>
+		<!--BUTTONS-->
+
+		<input type="button" id="invite_friends_button" name="invite_friends" onclick="document.querySelector('#friends_holder').classList.toggle('slider_closed');" value="INVITE FRIENDS">
+
+
+		<div id="two_buttons">
+			<input id="create_button" type="submit" value="CREATE">
+			<input type="button" id="cancel_button" name="invite_friends" onclick="window.location='buzz_topics.html'" value="CANCEL">
+		</div>
+	</form>
+
+</body>
+
+</html>

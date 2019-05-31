@@ -1,0 +1,393 @@
+/*Core Styles*/
+
+body {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	background: #63C5E0;
+	color: black;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+}
+
+
+.grid {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.container {
+	margin: auto;
+	width: 100%;
+	text-align: center;
+}
+
+/*INDEX*/
+
+#kea_logo {
+	display: block;
+	width: 15%;
+	height: auto;
+	margin: auto;
+	margin-top: 100px;
+	max-width: 15%;
+}
+
+h1 {
+	font-size: 2.5em;
+	margin: auto;
+	margin-bottom: 1em;
+}
+
+.btn {
+	width: 40%;
+	height: 1em;
+	display: grid;
+	grid-template-columns: 1fr;
+	margin: auto;
+	margin-top: 1.5em;
+	padding: 1em;
+	font-size: 1.2em;
+	background-color: white;
+	text-decoration: none;
+	text-align: center;
+	vertical-align: middle;
+}
+
+/*LOGIN*/
+
+#login_button {
+	width: 25%;
+	height: 2em;
+	margin-top: 1.5em;
+	margin-right: 25%;
+	font-size: 1em;
+	text-decoration: none;
+	background-color: #253247;
+	color: white;
+	text-align: center;
+	float: right;
+
+}
+
+
+/*MENU*/
+
+#hello {
+	margin-top: 50px;
+	margin: auto;
+	color: white;
+}
+
+#line {
+	width: 100%;
+	height: 50px;
+	background-color: #253247;
+	position: absolute;
+	float: left;
+	z-index: -1;
+	margin: 0;
+}
+
+ul {
+	width: 100%;
+	height: 50px;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	list-style: none;
+	margin: 0;
+	margin-bottom: 10px;
+	padding: 0;
+	position: relative;
+}
+
+li {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+
+}
+
+.icons {
+	width: auto;
+	height: 1.3em;
+	grid-template-columns: repeat(6, 1fr);
+	padding: 12px;
+	margin: auto;
+}
+
+.icons_group {
+	padding: 0;
+	margin: auto;
+	margin-left: 20px;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+}
+
+#en_icon {
+	margin-right: 10px;
+}
+
+/*Hamburger menu*/
+
+.mobile-container {
+	width: 100%;
+	height: auto;
+	margin: auto;
+	/*background-color: #253247;*/
+	color: white;
+	border-radius: 10px;
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.topnav {
+	/*background-color: #253247;*/
+	position: absolute;
+}
+
+
+.topnav a {
+	color: #253247;
+	padding: 10px 10px;
+	text-decoration: none;
+	font-size: 1.5em;
+	display: block;
+	margin: auto;
+}
+
+.topnav a:hover {
+	background-color: #253247;
+	color: white;
+	width: 100%;
+	height: auto;
+}
+
+
+.buzz {
+	width: 70%;
+	height: auto;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	cursor: pointer;
+
+}
+
+#buzz_buzz_page {
+	margin: auto;
+}
+
+/*@media only screen and (max-width: 600px) {
+	article {
+		column-count: 1;
+	}
+}*/
+
+/*BUZZ*/
+.article_area {
+	background-color: #63C5E0;
+	width: 95%;
+	margin: auto;
+	padding: 5px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	z-index: -1;
+}
+
+article p {
+	padding: 20px;
+}
+
+#buzz_bgr {
+	background-color: white;
+	width: 100%;
+	height: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+
+/*BUZZ_topics*/
+
+#create_buzz {
+	width: 95%;
+	height: auto;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.circle_image {
+	border-radius: 50%;
+	width: 90px;
+	height: 90px;
+	border: solid 2px;
+	border-color: white;
+	float: left;
+	margin-left: 3%;
+	margin-top: 3%;
+}
+
+.p_topic {
+	text-align: left;
+	margin-left: 30%;
+}
+
+h3 {
+	text-align: left;
+	margin-left: 35%;
+	margin-right: 3%;
+	padding: 0;
+
+}
+
+#room_name {
+	width: 90%;
+	margin: auto;
+}
+
+.large_inputs {
+	width: 95%;
+	height: 100px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	text-align: left;
+	background-color: #63C5E0;
+	border: none;
+	vertical-align: text-top;
+	padding: 10px;
+}
+
+#invite_friends_button {
+	width: 47%;
+	height: 50px;
+	float: right;
+	margin-top: 50px;
+	margin-right: 5px;
+	display: inline-block;
+	background-color: #253247;
+	color: white;
+	font-size: 16px;
+}
+
+
+#create_button {
+	width: 47%;
+	height: 50px;
+	float: right;
+	margin-top: 50px;
+	margin-right: 5px;
+	display: inline-block;
+	background-color: #253247;
+	color: white;
+	font-size: 16px;
+}
+
+#cancel_button {
+	width: 47%;
+	height: 50px;
+	float: right;
+	margin-top: 50px;
+	margin-right: 5px;
+	background-color: #253247;
+	color: white;
+	font-size: 16px;
+
+}
+
+#two_buttons {
+	display: inline-block;
+	width: 100%;
+	margin: auto;
+}
+
+/*FRIENDS PAGE*/
+
+.friends {
+	width: 95%;
+	height: auto;
+	display: inline-block;
+	margin: 2%;
+	margin-top: 20px;
+}
+
+.name {
+	width: 70%;
+	height: auto;
+	font-size: 1.0em !important;
+	display: block;
+	margin-right: 5px;
+	margin-left: 33%;
+	margin-top: 10px;
+	text-align: left;
+
+}
+
+.pic {
+	width: 20%;
+	height: auto;
+	float: left;
+	margin-left: 3%;
+	display: block;
+}
+
+.circle_image_friends {
+	border-radius: 50%;
+	width: 70px;
+	height: 70px;
+	border: solid 4px;
+	border-color: #253247;
+	float: left;
+	margin-left: 3%;
+	margin-top: 3%;
+}
+
+/*SEARCH FRIENDS*/
+#search_friends {
+	width: 87%;
+	height: 50px;
+	margin: auto;
+	display: block;
+	background-color: lightgray;
+	color: black;
+	font-size: 1.3em;
+	padding: 10px;
+	margin-top: 20px;
+	border-radius: 30px;
+	border-style: none;
+}
+
+/*CHAT*/
+.left {
+	float: left;
+	margin-left: 20px;
+}
+
+.right {
+	float: right;
+}
+
+.ui-menu-item,
+.ui-menu-item-wrapper {
+	white-space: nowrap;
+	font-size: 21px;
+}
+
+.selected {
+	background: #63C5E0;
+}
+
+.slider {
+	overflow-y: hidden;
+	max-height: 700px;
+	transition-property: all;
+	transition-duration: .8s;
+	transition-timing-function: cubic-bezier(0, 1, 0.8, 1);
+}
+
+.slider_closed {
+	max-height: 0;
+}
