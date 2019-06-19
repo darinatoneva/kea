@@ -1,0 +1,245 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 1em;
+
+}
+
+nav {
+	background: rgba(0%, 0%, 0%, 1);
+	height: 40px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 999;
+}
+
+h1 {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+nav {
+	text-align: center;
+}
+
+nav a {
+	text-decoration: none;
+	color: white;
+	font-size: 1.1em;
+	padding: 1em;
+	line-height: 40px;
+}
+
+#home_link {
+	width: 100%;
+	height: 100%;
+	display: block;
+	padding: 0px;
+	margin: 0px;
+	background-image: url(../images/logo_darina-02.png);
+	background-position: center center;
+	background-size: auto 70%;
+	background-repeat: no-repeat;
+}
+
+nav h1 {
+	color: white;
+	margin: 0px;
+	text-align: left;
+	line-height: 40px;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 1.5em;
+	padding-left: 1em;
+}
+
+main {
+	width: 90%;
+	height: 100%;
+	position: relative;
+	float: left;
+	margin: 0px;
+	padding-top: 50px;
+	padding-bottom: 20px;
+	padding-left: 5%;
+	padding-right: 5%
+}
+
+p {
+	margin-top: 16px;
+	margin-bottom: 16px;
+	font-size: 1em;
+	line-height: 1.5em;
+	text-align: justify;
+}
+
+.homepage_section h1 {
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+
+.project_title_link,
+.project_title_link a {
+	/*font-weight: bold;
+	font-size: 1.3em;*/
+	text-decoration: none;
+	color: black;
+}
+
+.project_title_link:hover {
+	text-decoration: underline;
+}
+
+.link {
+	color: indianred;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+.project_section p {
+	width: 100%;
+}
+
+.project_section {
+	padding: 0px;
+	margin: 0px;
+	padding-top: 0px;
+}
+
+.project_section img {
+	width: 100%;
+}
+
+
+
+
+/* CSS only for wide screens */
+@media only screen and (min-width: 800px) {
+
+	hr {
+		margin-bottom: 0em;
+		margin-top: 4em;
+	}
+
+	nav ul {
+		display: grid;
+		grid-template-columns: 1fr 3fr 20fr 3fr 3fr;
+		grid-gap: 0px;
+		grid-auto-rows: minmax(20px, auto);
+		list-style: none;
+		padding: 0px;
+		margin: 0px;
+	}
+
+	.homepage_section {
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		grid-gap: 0px;
+		padding: 0px;
+		margin: 0px;
+		padding-top: 40px;
+	}
+
+	.section_right_img_holder img {
+		width: 90%;
+		margin-right: 0px;
+		margin-top: 68px;
+		float: right;
+	}
+
+	.about_me_section {
+		display: grid;
+		grid-template-columns: 1fr 7fr;
+		grid-gap: 3em;
+		padding: 0px;
+		margin: 0px;
+		padding-top: 40px;
+	}
+
+	.section_left_img_holder img {
+		width: 100%;
+		margin-right: 0px;
+		margin-top: 68px;
+		float: left;
+
+	}
+
+	.about_me_next_section p {
+		width: 60%;
+	}
+
+	.about_me_next_section {
+		display: grid;
+		grid-template-rows: 1fr 2fr 25fr;
+		grid-gap: 1em;
+		padding: 0px;
+		margin: 0px;
+		padding-top: 0px;
+	}
+
+	.about_me_next_section img {
+		width: 100%;
+	}
+
+	.portfolio_section {
+		display: grid;
+		grid-template-columns: 1fr 7fr;
+		grid-gap: 3em;
+		padding: 0px;
+		margin: 0px;
+		padding-top: 40px;
+	}
+
+	.project_left_img_holder img {
+		width: 100%;
+		margin-right: 0px;
+		margin-top: 18px;
+		float: left;
+	}
+
+	.narrow_main {
+		width: 80%;
+		height: 100%;
+		position: relative;
+		float: left;
+		margin: 0px;
+		padding-top: 50px;
+		padding-bottom: 20px;
+		padding-left: 10%;
+		padding-right: 10%
+	}
+
+	button {
+		text-decoration: none;
+		background-color: black;
+		width: 100px;
+		height: 40px;
+		color: white;
+		float: right;
+	}
+
+	.img_container {
+		border-width: 1px;
+		border-style: solid;
+		border-color: gray;
+	}
+
+
+}
+
+#cover {
+	width: 40%;
+	margin: auto;
+	height: auto;
+	margin-left: 300px;
+}
+
+#gif {
+	width: 40%;
+	height: auto;
+	margin: auto;
+	margin-left: 300px;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Darina Toneva - Portfolio</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/mobile.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<nav>
+		<ul>
+			<li><a href="index.html" id="home_link"></a></li>
+			<li>
+				<a href="index.html">HOME</a>
+			</li>
+			<li></li>
+			<li><a href="about.html">ABOUT&nbsp;ME</a></li>
+			<li><a href="portfolio.html">PORTFOLIO</a></li>
+		</ul>
+	</nav>
+	<main class="narrow_main">
+		<button onclick="goBack()">Go Back</button>
+		<section class="project_section">
+
+			<h1>"Monty Python and the Holy Grail"</h1>
+			<br><br>
+			<h3>A short description of the assignment</h3>
+			<p>To create a digital, interactive poster for one of ten possible movies. We chose to make a poster for "Monty Python and the Holy Grail". The goal of our production was to evoke an interest for watching the movies within young adults. We had to consider our target group and what they might find inspiring while also have the artistic style of the movie in mind.
+
+				<br>The interactive poster had to have three distinctly different “stages”:
+
+				<br><br>
+				Stage 1:
+				The poster’s default design that the user sees when the poster is first encountered. The design had to lead the user’s attention to engage in the interactive part which is…
+				<br><br>
+				Stage 2:
+				The interactive part had to include some game-like activities. They could be some kind of animations that the user can click.
+				<br><br>
+				Stage 3:
+				The movie poster “after the user has done the interactive part”. In this final stage we needed a “call to action”, guiding the users where and when they can actually see the movie.
+
+			</p>
+			<br><br>
+			<img alt="section_left_img" src="images/monty_preview.jpg">
+			<br><br>
+		</section>
+		<section class="project_section">
+			<h3>My role</h3>
+			<p>
+				My role in this project was related to different parts of the design. I created the personas collage, "the bridge background and the old man" and some small details like arrows and buttons. Based on this vector image of the old man I created the gif and the spritesheet for the sprite animation. My final part of the project was to generate the pseudo code.
+
+			</p>
+
+			<br>
+			<h3>The coding part</h3>
+			<p>
+				In the creation of the interactive poster we used HTML5 and CSS3. To make our poster interactive we used Javascript for elements like buttons and all the moving elements (excluding the sprite animation, which was made by CSS keyframes). The main purpose of Javascript was to provoke a certain action when a click is triggered and we have a lot of these actions in our interactive poster.
+
+			</p>
+			<br><br>
+			<h4>Here you can see the project:</h4>
+			<div>
+				<a class="link" href="http://timidesign.org/kea/interactivePoster/0-start.html" target="_blank">Monty Python and the Holy Grail</a>
+			</div>
+			<h4>This is my gif animation</h4>
+			<img id="gif" alt="section_left_img" src="images/gif.gif">
+
+		</section>
+	</main>
+	<script>
+		function goBack() {
+			window.history.back();
+		}
+	</script>
+</body>
+
+</html>

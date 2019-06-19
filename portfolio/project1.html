@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Darina Toneva - Portfolio</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/mobile.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<nav>
+		<ul>
+			<li><a href="index.html" id="home_link"></a></li>
+			<li>
+				<a href="index.html">HOME</a>
+			</li>
+			<li></li>
+			<li><a href="about.html">ABOUT&nbsp;ME</a></li>
+			<li><a href="portfolio.html">PORTFOLIO</a></li>
+		</ul>
+	</nav>
+	<main class="narrow_main">
+
+		<button onclick="goBack()">Go Back</button>
+
+		<section class="project_section">
+
+			<h1>"Blue Note"</h1>
+			<br><br>
+			<h3>The assignment</h3>
+			<p>
+				The assignment was to build a responsive website of a given style (Blue Note in my case), including information and images related to the style as well as showing the overall process of creating the website, like creating style tile, moodboard, color scheme, typography and so on. There was a requirement to use responsive principles of front end web design like media queries, grid design and flexible content to build our website.
+
+			</p>
+
+			<img alt="section_left_img" src="images/blu_note_preview.jpg">
+		</section>
+		<section class="project_section">
+			<h3>How I applied what I learned in practice</h3>
+			<p>
+				For the design of my website I used complementary colors. The basic dark blue color I picked from the Blue Note Record's logo, and as a second blue color I used one of it's shades. I chose two shades of green and a kind of orange-red color. I actually picked these colours from some of the gramophone covers made by Reid Miles - designer and creator of the most famous and iconic covers of Blue Note Records. The chosen colors are not so saturated, because I wanted my website to be in this Blue Note retro style. Blue and green colors are cold and the orange is warm and stands on the opposite side in the colour wheel /complementary colors/. I think this combination is characterized by a harmonious colour contrasts and suits well with my given style.
+				<br>In the design of my website can be seen mainly four of the Gestalt principles, namely Common Region, Proximity, Similarity and Symmetry. I used as well a lot of contrast to separate from each other the different parts with different content.
+
+				<br><br>The basic principles that I used in the coding of HTML and CSS are use of a semantic code typical for HTML5, like "main", "section", "article" and so on. To arrange the HTML elements I used the grid of rows and columns in CSS. Grid-based layout system, makes it easier to design web pages without a need of using so much floats and positioning.
+				<br><br>Other two techniques that I used are "media queries" in the CSS and "meta" tag implemented in the HTML files.
+				Media queries are used to add breakpoints in the CSS and to set a rule how different parts of the website to behave on different in size screens. I have two "media queries" in my code which arrange the HTML elements in different way for screens bigger or smaller than 800px in width.
+				<br><br>The "meta" tag is new for HTML5 and it gives the browser instructions on how to control the page's dimensions and scaling, so we can be able to see the whole website content correctly on different in size devices.
+
+			</p>
+
+		</section>
+		<br><br>
+		<h4>Here you can see the project:</h4>
+		<div>
+			<a class="link" href="http://darina.dk/responsive/new" target="_blank">Blue Note</a>
+		</div>
+	</main>
+	<script>
+		function goBack() {
+			window.history.back();
+		}
+
+	</script>
+
+</body>
+
+</html>
