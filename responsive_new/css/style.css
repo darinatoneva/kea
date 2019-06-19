@@ -1,0 +1,463 @@
+/* NB! Media specific styling in the bottom */
+
+/* GENERAL STYLES */
+body {
+	color: #fff;
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	font-family: myriad-pro, sans-serif;
+
+}
+
+p {
+	text-align: left;
+	font-size: 1.2em;
+	text-align: center;
+}
+
+/* Body content colours and other styling here */
+
+
+
+
+
+aside {
+	background-color: #0099e8;
+}
+
+footer {
+	background-color: #01579b;
+}
+
+
+/* Grid area names defined here */
+header {
+	grid-area: header;
+}
+
+main {
+	grid-area: main;
+}
+
+aside {
+	grid-area: aside;
+}
+
+footer {
+	grid-area: footer;
+}
+
+section {
+	grid-area: section;
+	background: #235698;
+
+}
+
+section h3 {
+	text-align: left;
+	padding-left: 20px;
+}
+
+section img {
+	width: 200px;
+	height: auto;
+}
+
+article {
+	grid-area: article;
+	color: black;
+	padding: 20px;
+	margin: auto;
+}
+
+
+nav {
+	grid-area: nav;
+	padding: 0px;
+
+}
+
+section {
+	grid-area: section;
+	text-align: center;
+	border: 1px;
+	border-color: white;
+}
+
+#news,
+#tv {
+	margin-bottom: 50px;
+	margin-top: 50px;
+	background-color: #2b3148;
+}
+
+#news_pic,
+#tv_pic {
+	border-radius: 50%;
+	border: solid 1px white;
+	width: 20%;
+	max-width: 100px;
+}
+
+#news_section {
+	margin-bottom: 100px;
+	background-color: #2b3148;
+
+}
+
+
+#linkedin,
+#pismo {
+	margin-bottom: 50px;
+	margin-top: 50px;
+	background-color: #31a3dc;
+}
+
+#linkedin_pic,
+#pismo_pic {
+	border-radius: 50%;
+	border: solid 1px white;
+	width: 20%;
+	max-width: 100px;
+}
+
+#about_me_section {
+	margin-bottom: 100px;
+	background-color: #31a3dc;
+}
+
+	{
+	margin-bottom: 100px;
+
+}
+
+h4 {
+	font-weight: normal;
+}
+
+/*#news img,
+#tv img {
+
+	border-radius: 50%;
+	border: solid 1px white;
+	width: 30%;
+}
+#pismo {
+	position: relative;
+	float: left;
+	width: 50%;
+}*/
+
+
+
+
+/* MEDIA SPECIFIC GRID LAYOUT */
+@media only screen and (max-width: 800px) {
+	body {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas:
+			"header header"
+			"nav nav"
+			"article article"
+			"section section";
+	}
+
+	.button {
+		width: 50%;
+		padding: 0px;
+		margin: 0px;
+		border: 0px;
+		position: relative;
+		float: left;
+	}
+
+	header {
+		background-size: auto 100%;
+		height: 300px;
+	}
+
+	.logo_sketch {
+		height: 50px;
+		width: auto;
+	}
+}
+
+/* MEDIA SPECIFIC GRID LAYOUT */
+@media only screen and (min-width: 800px) {
+	body {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-areas:
+			"header header header header"
+			"nav nav nav nav"
+			"article article article article"
+			"section section section section";
+	}
+
+	.button {
+		width: 25%;
+		padding: 0px;
+		margin: 0px;
+		border: 0px;
+		position: relative;
+		float: left;
+	}
+
+	header {
+		background-size: 100% auto;
+		height: 400px;
+	}
+
+	.half {
+		position: relative;
+		float: left;
+		width: 50%;
+
+	}
+
+	.lefttext {
+		padding-top: 10%;
+		text-align: left;
+	}
+
+	.logo_sketch {
+		height: 80px;
+		width: auto;
+	}
+}
+
+@media only screen and (min-width: 550px)and (max-width: 800px) {
+	header {
+		background-size: 100% auto;
+		height: 300px;
+	}
+}
+
+/* MEDIA SPECIFIC GRID LAYOUT */
+@media print {
+	header {
+		display: none;
+	}
+
+	body {
+		color: black;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-areas:
+			"header header header header"
+			"button1 button2 button3 button4"
+			"article article article article"
+			"news news tv tv";
+	}
+}
+
+.second_font {
+	font-family: 'Vidaloka', serif;
+	letter-spacing: 1px;
+	font-size: 1.5em;
+	text-align: center;
+}
+
+.second_font li a {
+	text-decoration: none;
+	color: black;
+}
+
+.second_font_nav li a {
+	font-family: 'Vidaloka', serif;
+	letter-spacing: 1px;
+	font-size: 1.5em;
+	text-decoration: none;
+	color: black;
+	margin-left: 20px;
+
+}
+
+.design_nav {
+	float: left;
+	margin-left: 0;
+}
+
+.blue_note_h {
+	color: white;
+}
+
+
+
+header {
+	background-image: url(../Resources/Images/head.jpg);
+	/*background-position: top right 50%;*/
+	background-repeat: no-repeat;
+}
+
+
+
+header div {
+	position: relative;
+
+}
+
+#header-text {
+	text-align: right;
+	float: right;
+	margin-top: 0px;
+	margin-right: 3%;
+	font-size: 150%;
+	/*-webkit-text-fill-color: white;
+	/*-webkit-text-stroke-width: 1px;*/
+	/*-webkit-text-stroke-color: black;*/
+}
+
+.button {
+	height: 50px;
+}
+
+.button a {
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	background-color: #235698;
+	display: block;
+	width: 100%;
+	height: 100%;
+	font-size: 18px;
+	line-height: 50px;
+}
+
+.button a:hover,
+.button a:active {
+	text-decoration: none;
+	color: white;
+	background-color: black;
+}
+
+#mypic {
+	width: 10%;
+	max-width: 150px;
+	min-width: 100px;
+}
+
+#hello {
+	width: 100px;
+}
+
+#about_me {
+	float: right;
+	width: 85%;
+
+}
+
+#p_about_me {
+	text-align: left
+}
+
+.moodboard_inspiration {
+	position: relative;
+	float: left;
+	width: 50%;
+}
+
+#moodboard_inspiration {
+	background-color: #d2453b;
+	padding: 20px;
+}
+
+#what_is {
+	background-color: #31a3dc;
+	padding: 20px;
+}
+
+#blue_note_records {
+	background-color: #235698;
+	padding: 20px;
+}
+
+#reid_miles {
+	background-color: #91ab3c;
+	padding: 20px;
+}
+
+#what_does {
+	background-color: #53660d;
+	padding: 20px;
+}
+
+#so_what {
+	background-color: #31a3dc;
+	padding: 20px;
+}
+
+#typography {
+	background-color: #31a3dc;
+	padding: 20px;
+}
+
+#colour_scheme {
+	background-color: #91ab3c;
+	padding: 20px;
+}
+
+#image_assets {
+	background-color: #53660d;
+	padding: 20px;
+	height: 400px;
+}
+
+#logo_sketches {
+	background-color: #31a3dc;
+	padding: 20px;
+}
+
+
+#sitemap {
+	background-color: #235698;
+	padding: 20px;
+	width: 87%;
+}
+
+#sitemap img {
+	width: 50%;
+	height: auto;
+}
+
+#folder_structure {
+	background-color: #d2453b;
+	padding: 20px;
+	width: 89%;
+}
+
+#folder_structure img {
+	width: 50%;
+	height: auto;
+}
+
+.blue_note {
+	width: 25%;
+}
+
+.greenrow {
+	width: 100%;
+	height: auto;
+	position: relative;
+	float: left;
+	background: #53660d;
+}
+
+.half a {
+	text-decoration: none;
+	color: black;
+
+}
+
+.half a:hover {
+	text-decoration: underline;
+	color: black;
+
+}
+
+.menu_link {
+	letter-spacing: 1px;
+
+}

@@ -1,0 +1,113 @@
+/* GENERAL STYLES */
+
+@font-face {
+	font-family: 'KBH-Bold';
+	src: url('KBH-Black.eot');
+	src: url('KBH-Black.eot?#iefix') format('embedded-opentype'),
+		url('KBH-Black.woff2') format('woff2'),
+		url('KBH-Black.woff') format('woff');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'KBH-Regular';
+	src: url('KBH-Regular.eot');
+	src: url('KBH-Regular.eot?#iefix') format('embedded-opentype'),
+		url('KBH-Regular.woff2') format('woff2'),
+		url('KBH-Regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
+body {
+	font-family: "KBH-Regular";
+	color: #000033;
+}
+
+/* Grid area names defined*/
+header {
+	grid-area: header;
+	height: 200px;
+}
+
+section {
+	grid-area: section;
+}
+
+video {
+	grid-area: video;
+}
+
+#logo_area {
+	width: 20%;
+	float: left;
+	margin-top: 30px;
+	margin-left: 30px;
+}
+
+#logoimg {
+	width: 60%;
+}
+
+#header_text_area {
+	width: 40%;
+	text-align: center;
+	float: right;
+}
+
+/*RULES page*/
+#header_text_area_rules {
+	width: 70%;
+	text-align: center;
+	float: right;
+}
+
+#icon_area_rules {
+	position: absolute;
+	margin-left: 50px;
+	margin-top: 20px;
+}
+
+#icon_traffic_lights {
+	height: 115px;
+	margin-top: 25px;
+}
+
+.i_bike_cph_rules {
+	margin-top: 30px;
+	margin-bottom: 5px;
+	margin-right: 500px;
+	float: right;
+	width: 100%;
+	text-align: right;
+	color: #c84046;
+}
+
+.subtitle {
+	text-align: left;
+	margin-left: 175px;
+}
+
+.buttons_style_rules {
+	background-color: #c84046;
+	padding: 5px;
+	margin: 2px;
+	cursor: pointer;
+	text-decoration: none;
+	color: white;
+	width: 160px;
+	text-align: center;
+	font-size: medium;
+	float: right;
+}
+
+/*END RULES page*/
+.i_bike_cph {
+	margin-top: 40px;
+	margin-bottom: 10px;
+	margin-right: 500px;
+	float: right;
+	width: 100%;
+	text-align: right;
+}
