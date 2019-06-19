@@ -1,0 +1,399 @@
+/*------------------------- GENERAL STYLES ------------------------------*/
+
+@font-face {
+	font-family: 'KBH-Bold';
+	src: url('KBH-Black.eot');
+	src: url('KBH-Black.eot?#iefix') format('embedded-opentype'),
+		url('KBH-Black.woff2') format('woff2'),
+		url('KBH-Black.woff') format('woff');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'KBH-Regular';
+	src: url('KBH-Regular.eot');
+	src: url('KBH-Regular.eot?#iefix') format('embedded-opentype'),
+		url('KBH-Regular.woff2') format('woff2'),
+		url('KBH-Regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
+h1 {
+	font-size: 5em;
+}
+
+h2 {
+	text-align: left;
+	margin-top: 0px;
+}
+
+body {
+	font-family: "KBH-Regular";
+	color: #000033;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	float: left;
+	padding: 0px;
+	margin: 0px;
+	padding-bottom: 50px;
+}
+
+/*------------------------- GENERAL STYLES ------------------------------*/
+
+/*-------------------- Grid area names defined --------------------------*/
+header {
+	grid-area: header;
+	height: auto;
+	position: relative;
+	float: left;
+	width: 100%;
+	background-image: url(../res/KBH_Maerke_UK_Blue_RGB_small.png);
+	background-repeat: no-repeat;
+	background-position: 2% 50%;
+	background-size: 9% auto;
+	padding-bottom: 3%;
+}
+
+section {
+	grid-area: section;
+}
+
+video {
+	grid-area: video;
+}
+
+#logo_area {
+	width: 20%;
+	float: left;
+	margin-top: 30px;
+	margin-left: 30px;
+}
+
+#logoimg {
+	width: 60%;
+}
+
+#header_text_area {
+	width: 30%;
+	min-width: 530px;
+	text-align: center;
+	position: relative;
+	margin: auto;
+
+}
+
+/*-------------------- Grid area names defined --------------------------*/
+
+/*----------------------------- INDEX PAGE ------------------------------*/
+.i_bike_cph {
+	width: 100%;
+	text-align: left;
+	background-image: url(../res/4__Cykel_Blå_1.png);
+	background-size: auto 120%;
+	background-repeat: no-repeat;
+	background-position: right 150%;
+	margin-top: 8%;
+	margin-bottom: 2%;
+}
+
+.red {
+	color: #c84046;
+}
+
+
+.buttons {
+	float: left;
+	width: 100%;
+	position: relative;
+	float: left;
+	height: auto;
+}
+
+.buttons_style {
+	background-color: #76a8d5;
+	width: auto;
+	cursor: pointer;
+	text-decoration: none;
+	color: white;
+	width: 32%;
+	text-align: center;
+	font-size: medium;
+	position: relative;
+	float: left;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+.buttons_style a {
+	text-decoration: none;
+	color: white;
+	font-family: 'KBH-Regular';
+	font-weight: bold;
+}
+
+.middle_button {
+	margin: 0% 2%;
+
+}
+
+#icon_bike {
+	width: 115px;
+	height: 115px;
+	margin-top: 5px;
+}
+
+
+#icon_area {
+	height: auto;
+	width: 15%;
+	position: absolute;
+}
+
+#frieze_area {
+	width: 100%;
+	min-height: 50px;
+	max-height: 123px;
+	height: 100px;
+	background-color: #000033;
+
+	background-image: url(../res/frisen_2/Frisen/Office_Web_RGB/Frise_Hvid.png);
+	background-repeat: repeat-x;
+	background-position: 0% 70%;
+	background-size: auto 80%;
+	position: relative;
+	float: left;
+}
+
+#frieze_img {
+	width: 102%;
+	margin-top: 20px;
+	margin-left: 7px;
+}
+
+article {
+	width: 96%;
+	height: auto;
+	text-align: justify;
+	margin: 5% auto;
+	column-count: 2;
+	column-gap: 2%;
+	grid-area: article;
+	display: block;
+}
+
+@media only screen and (max-width: 600px) {
+	article {
+		column-count: 1;
+	}
+}
+
+article p {
+	margin-top: 0px;
+	margin-bottom: 30px;
+}
+
+video {
+	/*border: solid black 2px;*/
+	width: 60%;
+	margin-top: 50px;
+}
+
+#video_iframe {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.row {
+	width: 100%;
+	height: auto;
+	position: relative;
+	float: left;
+	text-align: center;
+}
+
+.background_color {
+	background: #76a8d5;
+}
+
+/*---------------------------- END INDEX PAGE ----------------------------*/
+
+/*--------------------------- RULES PAGE --------------------------------*/
+#header_text_area_rules {
+	width: 70%;
+	text-align: center;
+	float: right;
+}
+
+#icon_area_rules {
+	position: absolute;
+	margin-left: 50px;
+	margin-top: 20px;
+}
+
+.rules_background {
+	background-image: url(../res/4__Trafikfyr_Bl%C3%A5_6.png);
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	background-position: 15% bottom;
+}
+
+.gallery_background {
+	background-image: url(../res/5__Kamera_Blå_1.png);
+	background-size: auto 130%;
+	background-repeat: no-repeat;
+	background-position: 8% bottom;
+}
+
+.no_background {
+	background-image: none;
+}
+
+.indented {
+	text-indent: 34%;
+}
+
+.center {
+	text-align: center;
+}
+
+
+#icon_traffic_lights {
+	height: 115px;
+	margin-top: 25px;
+}
+
+.i_bike_cph_rules {
+	margin-top: 30px;
+	margin-bottom: 5px;
+	margin-right: 500px;
+	float: right;
+	width: 100%;
+	text-align: right;
+	color: #c84046;
+}
+
+.subtitle {
+	text-align: left;
+	margin-left: 168px;
+}
+
+.column {
+	float: left;
+	width: 48%;
+	padding: 10px;
+	margin-top: 20px;
+
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.list_rules {
+	color: #c84046;
+	font-size: 1.5em;
+	text-align: left;
+}
+
+.buttons_main_menu {
+	float: left;
+	margin-left: 520px;
+	margin-bottom: 100px;
+}
+
+.more {
+	background-color: #000033;
+	height: 50px;
+	width: 100%;
+
+}
+
+.more_info a {
+	text-align: center;
+	text-decoration: none;
+	font-family: 'KBH-Regular';
+	color: #76a8d5;
+	font-size: 23px;
+	margin-top: 50px;
+}
+
+.more_info a:hover {
+	text-decoration: underline;
+}
+
+/*--------------------------- END RULES PAGE -----------------------------*/
+
+/*--------------------------- GALLERY PAGE -------------------------------*/
+
+.img_frame {
+	width: 200px;
+	height: 200px;
+	min-height: 50px;
+	position: relative;
+	float: left;
+	margin-top: 50px;
+	margin-left: 5%;
+	text-align: left;
+	overflow: hidden;
+}
+
+.img_frame img {
+	width: 100%;
+	height: auto;
+	position: absolute;
+}
+
+.img_frame a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	position: relative;
+}
+
+.i_bike_cph_gallery {
+	margin-top: 40px;
+	margin-bottom: 10px;
+	margin-right: 500px;
+	float: right;
+	width: 100%;
+	text-align: right;
+	color: #7c255d;
+	font-size: 2.75em;
+}
+
+#icon_area_camera {
+	height: auto;
+	width: 15%;
+	position: absolute;
+	margin-left: 370px;
+}
+
+#icon_camera {
+	width: auto;
+	height: 115px;
+}
+
+.subtitle_gallery {
+	text-align: left;
+	margin-left: 205px;
+}
+
+.buttons_main_menu_gallery_page {
+	float: left;
+	margin-left: 520px;
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+.gallery_title {
+	font-size: 37px;
+	color: #7c255d;
+}
+
+/*------------------------- END GALLERY PAGE -----------------------------*/
